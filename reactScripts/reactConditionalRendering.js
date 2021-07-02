@@ -27,6 +27,7 @@ class LoginControl extends React.Component {
         return (
             <div>
                 <Greeting isLoggedIn={isLoggedIn} />
+                <p>The user is <b>{isLoggedIn ? 'currently' : 'not'} logged in</b></p>
                 {button}
             </div>
         );
