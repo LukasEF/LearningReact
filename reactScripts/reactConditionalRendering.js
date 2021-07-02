@@ -26,6 +26,7 @@ class LoginControl extends React.Component {
 
         return (
             <div>
+                <h1>Login with Conditional Rendering</h1>
                 <Greeting isLoggedIn={isLoggedIn} />
                 <p>The user is <b>{isLoggedIn ? 'currently' : 'not'} logged in</b></p>
                 {button}
@@ -35,11 +36,11 @@ class LoginControl extends React.Component {
 }
 
 function UserGreeting(props) {
-    return <h1>Welcome back!</h1>;
+    return <h2>Welcome back!</h2>;
 }
 
 function GuestGreeting(props) {
-    return <h1>Please sign up.</h1>;
+    return <h2>Please sign up.</h2>;
 }
 
 function Greeting(props) {

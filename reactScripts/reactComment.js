@@ -26,6 +26,7 @@ function UserInfo(props) {
 function Comment(props) {
     return (
         <div className="Comment">
+            <h1>Breaking down Components</h1>
             <UserInfo user={props.author} />
             <div className="Comment-text">{props.text}</div>
             <div className="Comment-date">

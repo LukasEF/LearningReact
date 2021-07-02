@@ -2,10 +2,10 @@ function Welcome(props) {
     return <p>Hello, {props.name}</p>;
 }
 
-function App(props) {
+function App() {
     return (
         <div>
-            <p>Passed value is {props.value}</p>
+            <h1>Multi-rendering</h1>
             <Welcome name="Lukas" />
             <Welcome name="Nathan" />
             <Welcome name="Callum" />
@@ -14,6 +14,6 @@ function App(props) {
 }
 
 ReactDOM.render(
-    <App value="10"/>,
+    <App />,
     document.getElementById('multiRender')
 );

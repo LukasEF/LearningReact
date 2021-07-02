@@ -26,6 +26,7 @@ class Alert extends React.Component {
     render() {
         return (
             <div>
+                <h1>Conditional Warning Banner</h1>
                 <WarningBanner warn={this.state.showWarning} />
                 <button onClick={this.handleToggleClick}>
                     {this.state.showWarning ? 'Hide' : 'Show'}

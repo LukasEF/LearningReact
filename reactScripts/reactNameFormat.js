@@ -2,11 +2,17 @@ function formatName(user) {
     return user.firstName + ' ' + user.lastName;
 }
 
-function getGreeting(user){
-    if(user){
-        return <p>Hello, {formatName(user)}!</p>
+function getGreeting(user) {
+    if (user) {
+        return <div>
+            <h1>React Name Format</h1>
+            <p>Hello, {formatName(user)}!</p>
+        </div>
     }
-    return <p>Hello, Stranger</p>
+    return <div>
+        <h1>React Name Format</h1>
+        <p>Hello, Stranger</p>
+    </div>
 }
 
 const user = {
